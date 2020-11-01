@@ -14,9 +14,7 @@
 
 case "$HSH_ACTION" in
     clone|bundle-out)
-	export CARGO_HOME="$HSH_ROOT/.local/share/cargo"
-	export RUSTUP_HOME="$HSH_ROOT/.local/share/rustup"
-	curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -- --profile complete --target beta
+	brew install rust
 	;;
 esac
    
